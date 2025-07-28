@@ -1,0 +1,59 @@
+from pathlib import Path
+
+# Recreate the HTML content after code state reset
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team 14 - miniFacebook</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f2f2f2; padding: 20px; }
+    h1, h2 { color: #333; }
+    .member {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    img {
+      width: 150px;
+      border-radius: 8px;
+    }
+    a {
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #1a73e8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Team 14 - miniFacebook</h1>
+  <h2>WAPH - Web Application Programming and Hacking</h2>
+
+  <div class="member">
+    <h3>Gaurav Singh Thakur (Team Leader)</h3>
+    <img src="images/gaurav.jpeg" alt="Gaurav Singh Thakur">
+    <p>Email: thakurg3@udayton.edu</p>
+    <a href="https://github.com/thakurg3/waph-thakurg3.github.io" target="_blank">Personal Homepage</a>
+  </div>
+
+  <div class="member">
+    <h3>Revanth Kumar Mallem</h3>
+    <img src="images/Revanth.jpeg" alt="Revanth Kumar Mallem">
+    <p>Email: mallemr1@udayton.edu</p>
+    <a href="https://github.com/Revanth-0606/project1" target="_blank">Personal Homepage</a>
+  </div>
+
+</body>
+</html>
+"""
+
+# Save the HTML file
+index_path = Path("/mnt/data/index_team14.html")
+index_path.write_text(html_content)
+
+index_path.name
